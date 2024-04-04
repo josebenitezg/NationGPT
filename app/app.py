@@ -21,7 +21,7 @@ def get_response(user_query):
     retriever = embedded_chunks.as_retriever()
 
     template = """
-    You are a helpful and funny assistant. Respond happy to the prompt based on the following context: {context}
+    You are a helpful and funny assistant. Respond happy using emojis to the prompt based on the following context: {context}
 
     User question: {user_question}
     """
