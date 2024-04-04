@@ -8,7 +8,7 @@ from langchain_openai import ChatOpenAI
 
 from rag import chunk_processing, embeddings
         
-pdf_path = './static/constitution.pdf'
+pdf_path = './app/static/constitution.pdf'
 
 pdf = open(pdf_path, 'rb')
 
