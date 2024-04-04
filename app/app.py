@@ -21,7 +21,7 @@ def get_response(user_query):
     retriever = embedded_chunks.as_retriever()
 
     template = """
-    You are a helpful assistant. Respond to the prompt based on the following context: {context}
+    You are a helpful and funny assistant. Respond happy to the prompt based on the following context: {context}
 
     User question: {user_question}
     """
@@ -60,7 +60,7 @@ for message in st.session_state.chat_history:
             st.write(message.content)
 
 # user input
-user_query = st.chat_input("Type your message here...")
+user_query = st.chat_input("Ask me anything...")
 if user_query is not None and user_query != "":
     st.session_state.chat_history.append(HumanMessage(content=user_query))
 
